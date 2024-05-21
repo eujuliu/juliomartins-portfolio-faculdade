@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#about_me">Sobre mim</a>
+        <a href="#academic">Formação Educacional</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about_me" class="about-me">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou um engenheiro de software autodidata com paixão por tecnologia e
+          resolução de problemas. Desde 2019, venho desenvolvendo minhas
+          habilidades por meio de recursos online gratuitos e prática diária.
+          Tenho 1 ano de experiência profissional e 2 anos em projetos open
+          source e pessoais. Sou altamente motivado e sempre em busca de novas
+          oportunidades para aprender e aplicar minhas habilidades em ambientes
+          desafiadores e dinâmicos.
+        </p>
+        <h2>Especialidades</h2>
+        <p>
+          Minha especialidade é o desenvolvimento de aplicativos
+          JavaScript/TypeScript, com foco em:
+        </p>
+        <ul>
+          <li>
+            Front-End: Criação de interfaces de usuário interativas com React.js
+            e Vue.js.
+          </li>
+          <li>
+            Back-End: Desenvolvimento de APIs REST e GraphQL com Node.js e
+            Nest.js.
+          </li>
+          <li>
+            Mobile: Desenvolvimento de aplicativos nativos para Android e iOS
+            usando React Native.
+          </li>
+          <li>
+            Full-Stack: Criação de aplicativos da web com renderização do lado
+            do servidor e sites estáticos usando Next.js.
+          </li>
+          <li>
+            Bancos de Dados: Trabalho com bancos de dados relacionais
+            (PostgreSQL, MySQL) e NoSQL (MongoDB), utilizando SQL ou ORMs.
+          </li>
+          <li>
+            Infraestrutura: Experiência com AWS e IBM, além de práticas de
+            testes automatizados.
+          </li>
+        </ul>
+      </section>
+
+      <section id="academic" class="academic">
+        <h2>Formação Educacional</h2>
+        <p>
+          A Universidade UNINTER tem sido fundamental na minha jornada de
+          aprendizado. Durante o curso, aprofundei meus conhecimentos em
+          programação, análise de sistemas e sistemas operacionais. Aprendi a
+          desenvolver soluções utilizando Java, gerenciar bancos de dados com
+          MySQL e criar scripts e automações com Python. O currículo rigoroso e
+          o corpo docente experiente da universidade me prepararam de maneira
+          sólida para minha futura carreira na indústria de tecnologia.
+        </p>
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Português: Nativo (Brasileiro)</li>
+          <li>Inglês: Profissional/Trabalho</li>
+          <li>Espanhol: Básico</li>
+          <li>Francês: Básico</li>
+        </ul>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
+        <p>Alguns dos meus projetos:</p>
+        <article>
+          <h2>API de Restaurante</h2>
+          <p>
+            Uma API de restaurante, onde é possível registrar um novo usuário,
+            fazer um pedido e realizar pagamentos. Esta API foi desenvolvida com
+            Node.js, TypeScript, Prisma (PostgreSQL) e os princípios de SOLID e
+            DDD. Os testes unitários e de integração foram realizados com Jest e
+            Docker.
+          </p>
+          <a href="https://github.com/eujuliu/restaurant-api">Repositório</a>
+        </article>
+        <article>
+          <h2>Clone do Discord Mobile</h2>
+          <p>
+            Este é um clone da interface de usuário do aplicativo móvel Discord,
+            que é um aplicativo de Chat e Videochamada. Foi desenvolvido com
+            Expo, React Native, TypeScript e styled-components.
+          </p>
+          <a href="https://github.com/eujuliu/discord-expo">Repositório</a>
+        </article>
+        <article>
+          <h2>Encurtador de URL</h2>
+          <p>
+            Aqui, desenvolvi um site de encurtamento de URLs, onde utilizo a API
+            shrtco.de com a fetch API do JavaScript para encurtar URLs. Os links
+            também são salvos nos Cookies. Este site foi desenvolvido com
+            Next.js, TypeScript e styled-components.
+          </p>
+          <a href="https://github.com/eujuliu/url-shortening">Repositório</a>
+        </article>
+        <article>
+          <h2>Site de Notas</h2>
+          <p>
+            Neste site, o usuário pode criar notas usando Markdown, e elas ficam
+            salvas no LocalStorage do navegador. Dessa forma, se o navegador for
+            reiniciado, as notas permanecem salvas. Este site foi desenvolvido
+            com React.js, Redux, JavaScript e SCSS.
+          </p>
+          <a href="https://github.com/eujuliu/jnotes">Repositório</a>
+        </article>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form method="post" onsubmit="event.preventDefault()">
+          <label for="user-name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Digite seu nome"
+          />
+
+          <label for="user-email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="Digite seu email"
+          />
+
+          <label for="user-message">Mensagem</label>
+          <textarea
+            name="message"
+            id="user-message"
+            rows="5"
+            maxlength="500"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+
+          <button type="submit" onclick="sendMessage()">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      function sendMessage() {
+        const name = document.querySelector('#user-name');
+        const email = document.querySelector('#user-email');
+        const message = document.querySelector('#user-message');
+
+        console.log({
+          name: name.value,
+          email: email.value,
+          message: message.value,
+        });
+      }
+    </script>
+  </body>
+</html>

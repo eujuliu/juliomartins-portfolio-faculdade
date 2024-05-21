@@ -1,0 +1,121 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 500 16px/1.5 'Inter', sans-serif;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #5a5a5a;
+  background-color: #1f1f1f;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 200ms;
+}
+
+a:hover {
+  color: #1179da;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 25px;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main section:not(:first-of-type) {
+  border-top: 1px solid #5a5a5a;
+}
+
+main section ul li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+main section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+main section form input,
+main section form textarea {
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+main section form button {
+  background-color: #1179da;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100px;
+}
