@@ -2,6 +2,7 @@
   font-size: 62.5%;
 }
 
+/* Definindo o box-sizing para que o tamanho do elemento não mude quando usar padding, margin */
 *,
 *::before,
 *::after {
@@ -13,6 +14,7 @@
   padding: 0;
 }
 
+/* Definindo font global, tamanho do body e cores de fundo e de fonts */
 body {
   font: 500 16px/1.5 'Inter', sans-serif;
   height: 100%;
@@ -20,6 +22,7 @@ body {
   color: #fff;
 }
 
+/* Para que os inputs, buttons, textarea e select herdem a font do body */
 input,
 button,
 textarea,
@@ -27,12 +30,14 @@ select {
   font: inherit;
 }
 
+/* Removendo estilos padrão do botão */
 button {
   border: none;
   cursor: pointer;
   background: none;
 }
 
+/* Para que esses elementos tenham quebra de linha */
 p,
 h1,
 h2,
@@ -42,6 +47,8 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* Abaixo é a customização do site */
 
 header {
   display: flex;

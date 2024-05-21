@@ -15,6 +15,7 @@
   </head>
   <body>
     <header>
+      <!-- Barra de navegação com links internos -->
       <nav>
         <a href="#about_me">Sobre mim</a>
         <a href="#academic">Formação Educacional</a>
@@ -69,6 +70,7 @@
       </section>
 
       <section id="academic" class="academic">
+        <!-- Formação acadêmica e idiomas -->
         <h2>Formação Educacional</h2>
         <p>
           A Universidade UNINTER tem sido fundamental na minha jornada de
@@ -89,6 +91,7 @@
       </section>
 
       <section id="portfolio" class="portfolio">
+        <!-- Projetos do meu portfólio -->
         <h2>Portfólio</h2>
         <p>Alguns dos meus projetos:</p>
         <article>
@@ -135,6 +138,7 @@
 
       <section id="contact" class="contact">
         <h2>Contato</h2>
+        <!-- Formulário de envio -->
         <form method="post" onsubmit="event.preventDefault()">
           <label for="user-name">Nome</label>
           <input
@@ -168,6 +172,7 @@
 
     <script>
       function sendMessage() {
+        // Código para pegar os inputs e enviar
         const name = document.querySelector('#user-name');
         const email = document.querySelector('#user-email');
         const message = document.querySelector('#user-message');
